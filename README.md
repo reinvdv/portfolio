@@ -4,6 +4,7 @@ Ik heb er voor gekozen om een eigen opdracht te doen omdat, ik denk dat de beste
 Ik ga mijn portfolio maken dit word geen onepage zoals mijn vorige.
 De reden waarom ik hier voor kies is omdat google meer content leuk vind en dat is beter voor de seo.
 Ik heb voor dit project ook een eigen domein gehaald om te zorgen dat de seo beter word.
+Voor dit project gebruik ik als framework bootstrap.
 
 In dit project ben ik zelf de opdrachtgever omdat het een site voor mij is maar mijn begeleider is Dylan van Zanten.
 
@@ -11,8 +12,8 @@ In dit project ben ik zelf de opdrachtgever omdat het een site voor mij is maar 
 
 Ik heb voor dit project de volgende technieken gebruikt:
 
- -HTML(5)
- -PHP
- -
+HTML(5) / PHP / JQuery / SCSS / Bootstrap
   
- 
+# Link naar de server
+
+http://reiniervdvelden.nl/
