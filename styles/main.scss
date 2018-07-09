@@ -1,0 +1,592 @@
+
+@import "mixins.scss";
+$donkerblauw: #2d89e5;
+$blauw: #3399ff;
+$socials-small: 1000px;
+$no-socials: 770px;
+$project-ipad: 1200px;
+$small: 500px;
+
+* {margin: 0; padding: 0; list-style-type: none;}
+
+a {text-decoration: none; color: black; &:hover{text-decoration: none;}}
+html {
+    background-color: white;
+    html.fade-out {
+        opacity: 0;
+        transition: none;
+    }
+}
+body {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	background:url('http://s1.picswalls.com/wallpapers/2016/06/10/4k-high-definition-wallpaper_065229159_309.jpg')no-repeat center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 1;
+	transition: 2s opacity;
+  z-index: 1;
+
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+.menu{
+  @include respond-to(no-socials) {display: none;}
+	background-color: rgba(0,0,0,0.3);
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+  z-index: 100;
+  @include transition (0.3s);
+  font-size: 1.05em;
+	img{
+		height: 55px;
+		width: auto;
+		margin-top: 5px;
+	}
+		li{
+			display: inline-block;
+			margin: 20px 15px 20px 15px;
+      @include transition (0.3s);
+			a{
+				color: white;
+				text-decoration: none;
+				font-family: 'Quicksand', sans-serif;
+				font-size: 1.1em;
+				font-weight: bold;
+				padding: 3px;
+			}
+		}
+}
+.menu-active{
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0px 2px 3px rgba(10,10,10,0.7);
+}
+
+.menuMobile{
+  display: none;
+  @include respond-to(no-socials) {display: block;}
+  background-color: rgba(0,0,0,1);
+  height: 50px;
+  width: 100%;
+  i{
+    color: white;
+    margin-right: 10px;
+    font-size: 35px;
+    margin-top: 7px;
+    cursor: pointer;
+  }
+  img{
+    height: 40px;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .overlayMenu{
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(20,20,20,0.9));
+    color: white;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+      li{
+        line-height: 50px;
+        a{
+          @include transition (0.2s);
+          color:white;
+          font-weight: bold;
+          &:hover{
+              border-bottom: 2px solid white;
+          }
+        }
+      }
+      .overlay-footer-text{
+        display: block;
+        color: white;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        font-family: 'Anton', sans-serif;
+        font-size: 1.1em;
+      }
+      img{width: 70px; margin: 0 auto;}
+  }
+}
+
+.jumbotron{
+	background: none;
+	color: white;
+	margin-top: 15vh;
+  margin-bottom: 15vh;
+  height: 200px;
+	h1{
+		font-family: 'Quicksand', sans-serif;
+		font-weight: bold;
+  }
+	p{
+		font-family: 'Anton', sans-serif;
+		letter-spacing: 2px;
+	}
+}
+
+.wrapper{
+	background-color: white;
+	height: auto;
+  padding-bottom: 25px;
+}
+.homepage-teskt{
+  width:600px;
+  margin: 15vh auto;
+}
+.project-homepage{
+	height: 350px;
+	width: 100%;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.3);
+	margin-bottom: 10px;
+  border-radius: 3px;
+
+  .home-projects-footer{
+    border-radius: 3px;
+    background-color: white;
+    height: 34px;
+    span{
+      display: block;
+      padding: 5px 5px 5px 5px;
+      background-color: white;
+
+    }
+  }
+}
+
+
+//////////////////////////////////////////
+////////////////////////////////////////
+////////////////ABOUT//////////////////
+//////////////////////////////////////
+/////////////////////////////////////
+
+.about-me{margin-top: 50px;}
+
+.about-foto{
+
+  height: 275px;
+  width: 275px;
+  margin: 25px  auto;
+  img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+
+  }
+}
+.info-schools{
+  height: 35vh;
+  border: 1px solid #f9f9f9;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0px 0px 8px rgba(30,30,30,0.3);
+  @include transition (0.2s);
+  &:hover{
+    box-shadow: 0px 0px 13px rgba(0,0,0,0.3);
+
+  }
+}
+.school-btn{
+  display: block;
+  color: white;
+  width:150px;
+  text-align: center;
+   height: 45px;
+   background-color: $blauw;
+   border-radius: 3px;
+   position: absolute;
+   top:0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding: 10px 15px 10px 15px;
+   margin: auto;
+   @include transition (0.2s);
+   &:hover{
+     background-color: $donkerblauw;
+     color: white;
+   }
+  }
+///////////////////////////////////////
+/////////////////////////////////////
+///////////////PROJECTS/////////////
+///////////////////////////////////
+///////////////////////////////////
+
+  .btn-site{
+    background-color: $blauw;
+    color: white;
+    display: block;
+    border-radius: 3px;
+    padding: 10px 20px 10px 20px;
+    @include transition (0.2s);
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-top: 24px;
+
+
+    &:hover{
+      color:white;
+      text-decoration: none;
+      background-color: $donkerblauw;
+      box-shadow: 0px 0px 10px rgba(10,10,10,0.3);
+
+    }
+    &.meer-projecten{
+      width: 250px;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      padding: 15px 0px 15px 0px;
+    }
+  }
+
+
+.project{
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(10,10,10,0.3);
+  padding-bottom: 10px;
+  @include transition (0.2s);
+  &:hover{
+    box-shadow: 0px 0px 25px rgba(10,10,10,0.3);
+
+  }
+  .project-header-image{
+    height: 300px;
+    background-size: cover;
+    border-bottom: 1px solid #dddddd;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    @include transition (0.2s);
+    width: 100%;
+
+  }
+  .beschrijving{
+    margin: 15px;
+    .homepage-btn{
+      width: 185px;
+    }
+  }
+  .samenwerking{
+    background-color: red;
+  }
+}
+.link-vriend{
+  @include transition (0.2s);
+  &:hover{
+    text-decoration: underline;
+    color:black;
+  }
+}
+
+.project-info{
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.7);
+  display: inline-block;
+  width: 35%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  @include respond-to(project-ipad) {width: 50%;}
+  @include respond-to(no-socials) {width: 100%;  height: auto; position: static; box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.7);}
+  .project-info-tekst{
+    width: 70%;
+    margin: 10vh auto;
+    @include respond-to(project-ipad) {width: 80%;}
+
+  }
+}
+.projectlink-section{
+  text-align:center;
+  color:white;
+  width: 65%;
+  left: 35%;
+  height: 100vh;
+  position: absolute;
+  @include respond-to(project-ipad) {width: 50%; left: 50%;}
+  @include respond-to(no-socials) {top: 50px; height:30vh; left: 0%; width: 100%;}
+
+  .projectlink{
+    margin: 42vh auto;
+    width: 375px;
+    @include respond-to(no-socials) {margin: 6vh auto; width: 100%; min-width: 370px;}
+
+    p{
+      font-size: 1.1em;
+      @include respond-to(no-socials) {font-size: 1em;}
+    }
+  }
+}
+.project-img-big{
+  -ms-transform: scale(1.05, 1.05); /* IE 9 */
+  -webkit-transform: scale(1.05, 1.05); /* Safari */
+  transform: scale(1.05, 1.05);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 13%;
+  @include filter (blur(15px));
+  background-color: black;
+  @include respond-to(no-socials) {
+    height:30vh;
+    width: 100%;
+    @include filter (blur(5px));
+    left: 0%;
+    position: static;
+    background-size: cover;
+    top: 0;
+  }
+
+}
+.btn {
+  border: 2px solid white;
+  color: white;
+  border-radius: 3px;
+  padding: 10px 25px 10px 25px;
+  @include transition (0.2s);
+  text-align: center;
+  font-weight: bold;
+  margin: 24px 10px;
+  width: 150px;
+  font-size: 18px;
+  box-shadow: 0px 0px 15px rgba(90,90,90,0.7);
+  background-color: rgba(250,250,250,0.2);
+  @include respond-to(no-socials) {width: 125px;}
+
+  &:hover{
+    color:white;
+    text-decoration: none;
+    background-color: $blauw;
+    box-shadow: 0px 0px 15px rgba(200,200,200,0.5);
+    border: 2px solid $blauw;
+  }
+
+}
+
+code{
+  background-color:$blauw;
+  color: white;
+  padding: 4px;
+}
+//////////////////////////////////////////
+//////////////////////////////////////////
+///////////CONTACT///////////////////////
+/////////////////////////////////////////
+//////////////////////////////////////////
+
+#map {height: 450px; width: 80%; margin: 0 auto; box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.5); border-radius: 3px;
+  @include respond-to(socials-small) {width: 100%}
+}
+.no-round-socials{
+  @include respond-to(no-socials) {display: none;}
+
+}
+.contact-round{
+  text-align: center;
+  background-color: #fafafa;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 6vh auto;
+  border: 1px solid #dddddd;
+  @include transition (0.2s);
+
+  @include respond-to(socials-small) {height: 170px; width: 170px;}
+
+
+  &:hover{
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.5);
+  }
+  i{
+    display: block;
+    margin-top: 70px;
+    font-size: 3.5em;
+    color:#aaa;
+    @include respond-to(socials-small) {margin-top: 50px;}
+    // @include respond-to(socials-big) {margin-top: 90px;}
+
+  }
+}
+.algemeen-contact{margin-top: -30px;}
+.name-contact{
+  font-weight: bold;
+  font-size: 1.1em;
+  color: $blauw;
+
+  }
+.info-contact{color: #aaa; text-decoration: none;
+  a{
+    color: #aaa;
+    @include transition (0.3s);
+    &:hover{
+      color: black;
+    }
+  }
+}
+.contact-mobile{
+  display: none;
+  font-size: 1.1em;
+  li{
+    line-height: 50px;
+  }
+  i{
+    color:$blauw;
+    width: 35px;
+  }
+  @include respond-to(no-socials) {display: block; }
+}
+///////////////////////////////////
+///////////////////////////////////
+////////////CONTACT-FORM///////////
+///////////////////////////////////
+///////////////////////////////////
+
+.contact-form{
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  @include respond-to(no-socials) {width: 100%;}
+
+  // box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.5);
+
+  span{
+    color: #aaa;
+    width: 100%;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    margin-top:25px;
+    border-bottom: 2px solid #aaa;
+    @include transition (0.2s);
+
+    &:hover{
+      border-bottom: 2px solid $blauw;
+      color:$blauw;
+      input{
+        color:#aaa;
+      }
+    }
+    input{
+      border:none;
+      outline: none;
+      width: 95%;
+      float: right;
+      @include respond-to(no-socials) {width: 92%;}
+
+    }
+    textarea{
+      width: 95%;
+      outline: none;
+      border: 0px;
+      float: right;
+      height: 15vh;
+      color: #aaa;
+      @include respond-to(no-socials) {width: 92%;}
+
+    }
+
+  }
+  input[type="submit"]{
+    width: 100%;
+    background-color: $blauw;
+    outline: none;
+    border: 2px solid $blauw;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    @include transition (0.2s);
+    &:hover{
+      box-shadow: 0px 0px 15px rgba(100, 100, 100, 0.4);
+    }
+  }
+
+}
+.confirmation-screen{
+  display: block;
+  height: 200px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #fdfdfd;
+  border: 1px solid #fbfbfb;
+  box-shadow: 0px 0px 10px rgba(151, 151, 151, 0.5);
+  p{
+    padding: 10px;
+  }
+  span{
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgb(245, 245, 245);
+  }
+
+}
+
+//////////////////////////////////////////
+/////////////////CV//////////////////
+////////////////////////////////////////
+//////////////////////////////////////////
+
+.cv-blad{
+  background-color: #fefefe;
+  width: 100%;
+  height: 1000px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.sub-titles{
+  // border-bottom: 5px solid $blauw;
+  line-height: 35px;
+}
+//////////////////////////////////////////
+//////////////////////////////////////////
+/////////////////FOOTER//////////////////
+////////////////////////////////////////
+//////////////////////////////////////////
+
+.footerwrap{
+  text-align: center;
+  padding: 15px;
+  background-color: #fafafa;
+  border-top: 1px solid #dddddd;
+  span{
+    @include respond-to(small) {font-size: 11px;}
+
+  }
+}
+
+.footer-small-heading{
+  font-weight:bold;
+   line-height:35px;
+   font-size: 1.1em;
+}
+/////////////////////////////
+/////////////////////////////
+////////error-page///////////
+/////////////////////////////
+/////////////////////////////
+.error-page{
+  position:absolute;
+  width:30%;
+  height:30%;
+  margin: 0  auto;
+  background-color: red;
+}
