@@ -14,6 +14,10 @@ Ik heb voor dit project de volgende technieken gebruikt:
 
 HTML(5) / PHP / JQuery / SCSS / Bootstrap
   
+  
+# Evaluatie
+  Ik heb naar mijn mening mijn doelen behaald in dit project en het met succes afgerond.
+  
 # Link naar de server
 
 http://reiniervdvelden.nl/
