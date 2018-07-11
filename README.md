@@ -12,8 +12,13 @@ In dit project ben ik zelf de opdrachtgever omdat het een site voor mij is maar 
 
 Ik heb voor dit project de volgende technieken gebruikt:
 
-HTML(5) / PHP / JQuery / SCSS / Bootstrap
-  
+-HTML(5)
+-PHP
+-JQuery
+-SCSS
+-MYSQL
+
+En als framework Bootstrap
   
 # Evaluatie
   Ik heb naar mijn mening mijn doelen behaald in dit project en het met succes afgerond.
