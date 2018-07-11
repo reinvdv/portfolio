@@ -1,15 +1,13 @@
 <div class="container">
   <div class="jumbotron" style="text-align:center;">
     <h1 class="fade-koptekst">Contact</h1>
-    <p class="fade-koptekst">Reinier | Media developer</p>
+    <p class="fade-koptekst">Reinier van der Velden | Media developer</p>
   </div>
-
 </div>
 <div class="wrapper">
   <div class="container">
   <div class="no-round-socials">
   <div class="row" style="text-align:center;">
-
   <div class="col-md-3">
     <div class="contact-round">
       <i class="far fa-envelope"></i>
@@ -37,7 +35,7 @@
       <div class="algemeen-contact">
         <span class="name-contact">GitHub</span><br>
         <hr>
-        <span class="info-contact"><a href="https://github.com/reinvdv">Reinvdv | GitHub</a></span>
+        <span class="info-contact"><a href="https://github.com/reinvdv" target="_blank">Reinvdv | GitHub</a></span>
       </div>
     </div>
     <div class="col-md-3">
@@ -47,7 +45,7 @@
       <div class="algemeen-contact">
         <span class="name-contact">Linkedin</span><br>
         <hr>
-        <span class="info-contact"><a href="https://www.linkedin.com/in/reinier-van-der-velden-914511152/">Reinier | Linkedin</a></span>
+        <span class="info-contact"><a href="https://www.linkedin.com/in/reinier-van-der-velden-914511152/" target="_blank">Reinier | Linkedin</a></span>
       </div>
     </div>
   </div>
@@ -56,7 +54,7 @@
    <h2>Contact informatie</h2>
    <ul>
      <li><i class="far fa-user"></i>Reinier van der Velden</li>
-     <li><i class="far fa-envelope"></i>Reiniervandervelden@ziggo.nl</li>
+     <li><i class="far fa-envelope"></i><a href="mailto:22810@ma-web.nl">info@reiniervdvelden.nl</a></li>
      <li><i class="fas fa-mobile-alt"></i>06-15163400</li>
      <li><i class="fab fa-github"></i></i><a href="https://github.com/reinvdv">Reinvdv | GitHub</a></li>
      <li><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/reinier-van-der-velden-914511152/">Reinier | Linkedin</a></li>
@@ -83,7 +81,6 @@
       $email = htmlentities($_POST['email']);
       $onderwerp = htmlentities($_POST['onderwerp']);
       $bericht = htmlentities($_POST['bericht']);
-
         $to = "22810@ma-web.nl";
         $subject = $onderwerp;
         $msg = '<table style=" background-color: #fcfcfc;width: 100%;border-collapse: collapse; font-family:arial; margin:0 auto;" cellspacing="0" cellpadding="10">
@@ -104,10 +101,8 @@
         $headers .= '' . "\r\n";
         mail($to,$subject,$msg,$headers);
         echo '<script>alert("Ik heb het bericht ontvangen en zal zo snel mogelijk contact met u op nemen.");</script>';
-
   }
   ?>
-
 </div>
 </div>
 <script async defer

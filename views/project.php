@@ -34,14 +34,6 @@ $result = mysqli_query($dbc, $query);
     $github = $row['github'];
     $samenwerking = $row['samenwerking'];
 
-  //   $samenwerking_project = '';
-  // $strip_samenwerking_project = explode(",", $samenwerking_project);
-  // foreach($strip_samenwerking_project as $stripped_samenwerking_project) {
-  //   $stripped_samenwerking_project = trim($stripped_samenwerking_project);
-  //   $samenwerking_project .= "<span class='samenwerking'>" . $stripped_samenwerking_project . "</span>\n";
-  // }
-  // echo $samenwerking_project;
-
 
     echo '
 
@@ -63,7 +55,7 @@ $result = mysqli_query($dbc, $query);
         <div>
           <hr>
           <h3>Mede developers</h3>
-          personen die hebben mee geholpen aan dit project:
+          personen die hebben mee geholpen aan dit project:<br>
           '.$samenwerking.'
         </div>
       </div>
@@ -73,7 +65,7 @@ $result = mysqli_query($dbc, $query);
         <p>Klik hier onder voor de link naar de site:</p>
         <a href=" '. $link .' " target="_blank" class="btn">Site&nbsp;<i class="fas fa-globe"></i></a>
         ';
-        if ($id == '3') {
+        if ($id == '3' || $id == '2') {
           echo '<a href="#" class="btn geen-github">GitHub&nbsp;<i class="fas fa-times"></i></a>';
         } else {
           echo '<a href=" '. $github . ' " target="_blank" class="btn">Github&nbsp;<i class="fab fa-github"></i></a>';
@@ -82,7 +74,7 @@ $result = mysqli_query($dbc, $query);
         echo'
       </div>
     </div>
-    </div.
+  </div.
 
     ';
   }

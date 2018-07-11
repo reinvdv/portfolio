@@ -11,7 +11,6 @@
     </div>
   </div>
 </div>
-
 <!-- Responive menu-->
 <div class="menuMobile">
   <div class="pull-left">
@@ -31,14 +30,11 @@
     <li><a href="/projects">Projects</a></li>
     <li><a href="/contact">Contact</a></li>
   </div>
-
   <span class="overlay-footer-text">Reinier</span>
   </div>
 </div>
-
 <script type="text/javascript">
 $('#mobileMenuBtnOpen, #mobileMenuBtnClose').on('click', function() {
   $(".overlayMenu").slideToggle("300");
-
 });
 </script>

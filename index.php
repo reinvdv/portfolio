@@ -1,6 +1,6 @@
 <?php
 //CONFIGURATIE
-require 'includes/config.php';
+require 'settings/config.php';
 //HEAD
 require 'views/head.php';
 

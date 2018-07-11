@@ -8,6 +8,7 @@
   <div class="container">
     <div class="row">
       <?php
+      
       $dbc = mysqli_connect(HOST, USER, PASS, DBNAME) or die ('ERROR!');
       $query = "SELECT * FROM projects ORDER BY id";
       $result = mysqli_query($dbc, $query);
