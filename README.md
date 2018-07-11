@@ -12,11 +12,11 @@ In dit project ben ik zelf de opdrachtgever omdat het een site voor mij is maar 
 
 Ik heb voor dit project de volgende technieken gebruikt:
 
--HTML(5)
--PHP
--JQuery
--SCSS
--MYSQL
+- HTML(5)
+- PHP
+- JQuery
+- SCSS
+- MYSQL
 
 En als framework Bootstrap
   
