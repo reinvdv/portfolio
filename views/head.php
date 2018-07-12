@@ -9,8 +9,8 @@
     <meta name="description" content="Ik ben Reinier van der Velden. Student op het Mediacollege Amsterdam bij de opleiding media developer.">
     <meta name="keywords" content="Reinier van der Velden portfolio">
     <meta name="apple-mobile-web-app-title" content="Reinier van der Velden">
-    <meta name='subject' content='Portfolio Reinier van der Velden'>
-    <link rel="shortcut icon" href="/img/logo-blauw.png" type="image/x-icon" height="10">
+    <meta name='subject' content='Reinier van der Velden portfolio'>
+    <link rel="shortcut icon" href="/img/logo-blauw.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">

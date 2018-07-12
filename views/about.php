@@ -31,7 +31,7 @@
 <div class="col-md-7" style=" height: 350px;">
   <h3><a href="http://www.touchcreative.nl/" style="color:black;" target="_blank">Touch Creative.</a></h3><br>
  <p>De eerste stage periode van mijn school heb ik gedaan bij Touch Creative in amsterdam. Ik heb hier mee gemaakt hoe het er in de praktijk aan toe gaat.</p>
- <p>Hier heb ik vooral basis front-end projectjes en eventpakketjes voor Ziggo Dome gemaakt. En een wat groter project genaamd Dagje Bij De Boer Dag (ook te bekijken op deze site). Veder heb ik hier ook netter leren progammeren.</p>
+ <p>Hier heb ik vooral basis front-end projectjes gedaan ook heb ik eventpakketjes gemaakt voor de Ziggo Dome. En een wat groter project genaamd Dagje Bij De Boer Dag (ook te bekijken op deze site). Veder heb ik hier ook netter leren progammeren.</p>
 </div>
 <div class="col-md-5" style=" height: 350px;">
   <img src="https://yt3.ggpht.com/a-/AJLlDp0g66f3ta1ryGdnDG2oeJohPOTfgmLMpoLBhg=s900-mo-c-c0xffffffff-rj-k-no" alt="Touch Creative logo" style="width:300px;display: block;margin:0 auto; margin-top:25px;">

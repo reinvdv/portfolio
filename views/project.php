@@ -45,7 +45,7 @@ $result = mysqli_query($dbc, $query);
         <p> '. $text .'</p><hr>
         <p>
         <h3>Technieken</h3>
-        We hebben tot nu toe de volgende technieken gebruikt:<br><br>
+        Ik hebx tot nu toe de volgende technieken gebruikt:<br><br>
         <code>HTML5</code>
         <code>SASS</code>
         <code>JQUERY</code>
@@ -70,7 +70,6 @@ $result = mysqli_query($dbc, $query);
         } else {
           echo '<a href=" '. $github . ' " target="_blank" class="btn">Github&nbsp;<i class="fab fa-github"></i></a>';
         }
-
         echo'
       </div>
     </div>

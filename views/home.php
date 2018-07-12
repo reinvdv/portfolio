@@ -7,11 +7,7 @@
 <div class="wrapper">
 	<div class="container">
     <div style="height:200px; width:200px; background: url('./img/reinier.jpg'); background-size: cover;border-radius:50%; border:5px solid white; margin:-99px auto;"></div>
-    <!-- <div class="homepage-teskt">
-      <p>Hallo, Mijn naam is Reinier van der Velden, 18 jaar oud. Wat leuk dat u mijn site bezoekt.
-      <br>Op deze site kunt u zien wie ik ben en natuurlijk wat werk dat ik heb gemaakt.</p><br>
-      <a href="/about" class="btn-site">About me</a>
-    </div> -->
+
 
 	<div class= "row" style="margin-top:12vh;">
 	 <?php
@@ -38,5 +34,27 @@
       }
     ?>
 	</div>
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="last-project">
+        <h3>Mijn laatste project</h3>
+        <hr>
+        <p style="margin:5px;">Mijn laaste project was Dagje Bij De Boer Dag. Ik heb dit project moeten maken in opdracht van beemster, naar mijn mening heb ik het met succes afgerond</p>
+        <p>Klik op bekijk dit project voor meer informatie</p>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="project">
+        <div class="project-header-image" style="background-image: url('/img/projects-img/dbdbd.jpg')"></div>
+        <div class="beschrijving">
+        <!-- <h3>Dagje bij de boerdag</h3>
+        <p>Dagje Bij De Boer Dag is een stage project die ik heb gedaan bij Touch Creative</p> -->
+        <hr>
+          <a href="/project/3" class="btn-site">Bekijk dit project</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <a href="/projects" class="btn-site meer-projecten">Bekijk meer projecten</a>
 </div>

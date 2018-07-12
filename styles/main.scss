@@ -140,13 +140,7 @@ body.fade-out {
 	height: auto;
   padding-bottom: 25px;
 }
-.homepage-teskt{
-  width:50%;
-  margin: 15vh auto;
-  text-align:center;
-  @include respond-to(no-socials) {width:100%;}
 
-}
 .project-homepage{
 	height: 350px;
 	width: 100%;
@@ -166,7 +160,10 @@ body.fade-out {
     }
   }
 }
-
+.last-project{
+  height: 31vh;
+  margin-top: 3vh;
+}
 
 //////////////////////////////////////////
 ////////////////////////////////////////
